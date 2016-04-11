@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>oceanKTV_cloud</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/icon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/big_grid.css">
+    <link href="css/qnap_style.css" rel="stylesheet">
+    <!-- Template js-->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-switch.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/rwd.js"></script>
+    <script src="js/goto.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <nav>
+            <div class="navicon"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></div>
+            <div class="btn_tv nav_sm_show"><img src="images/btn_topbar_control_off.png"></div>
+            <ul class="navemenu" id="opennav">
+                <li><i class="ic_settings_multizone"></i></li>
+                <li><i class="ic_topbar_refresh"></i></li>
+                <li><i class="enlarge"></i></li>
+                <li><i class="ic_topbar_More"></i>
+                    <div class="dropmenu">
+                        <ul>
+                            <li>安裝OceanKTV Client</li>
+                            <li>語言</li>
+                            <li>設定</li>
+                            <li>快速導覽</li>
+                            <li>幫助</li>
+                            <li>關於</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input id="switch-labelText" type="checkbox" data-label-text="oceanKTV">
+                </li>
+            </ul>
+            <div class="search">
+                <div id="search_bar">
+                    <input type="text" name="search" placeholder="Search...">
+                    <select>
+                        <option value="title">Title</option>
+                        <option value="artist">Artist</option>
+                    </select>
+                </div>
+                <i class="ic_topbar_Search_normal"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="homemenu">
+        <div class="container-fluid">
+            <div class="row">
+                <section class="billboard col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                    <h1><i class="ic_menu_reguestbook"></i> 熱門排行榜</h1>
+                    <div class="listview">
+                        <div class="menu-item col-sm-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/AOkFpYLJh2I/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">流行歌曲</span>
+                                    <span class="col-xs-12 col-sm-12">李榮浩</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/-cUtVtBx_8w/1.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">少了一個你</span><span class="col-xs-12 col-sm-12">io</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/sU4UgzcADL4/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">不負相思不負君</span>
+                                    <span class="col-xs-12 col-sm-12">沐婷</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item col-sm-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/-sM8SynMM5I/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">當我們混在一起</span><span class="col-xs-12 col-sm-12">兄弟本色</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/cD-bqbybMxM/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">資格不符</span><span class="col-xs-12 col-sm-12">王大文</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/CJmqMxMMQDs/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">不可能失眠</span><span class="col-xs-12 col-sm-12">符瓊音</span></div>
+                            </div>
+                        </div>
+                        <div class="menu-item col-sm-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/R9km70LAhEQ/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">愛情喜劇</span><span class="col-xs-12 col-sm-12">日京江羽人</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/_FCnnvrHQsc/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">想戀一個愛</span><span class="col-xs-12 col-sm-12">丁噹</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/EM-GCgd88mk/2.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">同類</span><span class="col-xs-12 col-sm-12">嘴哥樂團</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_more col-xs-12">more</div>
+                </section>
+                <section class="billboard col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                    <h1><i class="ic_menu_reguestbook"></i> 主題精選</h1>
+                    <div class="listview">
+                        <div class="col-item col-sm-12">
+                            <div class="col-xs-12 col-sm-5">
+                                <img src="http://img.youtube.com/vi/xxiUbgI8VlU/3.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">我是歌手 I Am a Singer 選手參賽歌曲 KTV版</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                            <div class="col-xs-12 col-sm-12">
+                                <img src="http://img.youtube.com/vi/xxiUbgI8VlU/2.jpg" class="col-xs-3 col-sm-4" style="display: none" />
+                                <span class="col-xs-9 col-sm-8">
+                                    <p class="col-xs-12 col-sm-12">中國大陸電視劇主題曲集合 (2016年1月更新)</p>
+                                    <p class="col-xs-12 col-sm-12">10首</p>
+                                </span>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <img src="http://img.youtube.com/vi/19-RI4uC4Vc/2.jpg" class="col-xs-3 col-sm-4"/>
+                                <span class="col-xs-9 col-sm-8">
+                                    <p class="col-xs-12 col-sm-12">中國大陸電視劇主題曲集合 (2016年1月更新)</p>
+                                    <p class="col-xs-12 col-sm-12">10首</p>
+                                </span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="menu-item col-sm-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/19-RI4uC4Vc/3.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">韓劇主題曲</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/Pj4do_Lr68A/1.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">偶像劇主題曲</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/06tGnYZQJvU/3.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">[嚴選] 台語金曲老歌 支支動聽</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item col-sm-12">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/c35izvZOSDY/1.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">90年代怀念歌曲</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/sjabE-WZo0s/1.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">搖滾</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="http://img.youtube.com/vi/6GXkJ6t20No/1.jpg" class="col-xs-3 col-sm-12" />
+                                <div class="col-xs-9 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">台灣兒歌</span>
+                                    <span class="col-xs-12 col-sm-12">10首</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="btn_more col-xs-12">more</div>
+            </section>
+            <section class="favlist col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                <h1><i class="ic_menu_favoraite"></i> 我的歌本</h1>
+                <div class="listview">
+                    <div class="menu-item">
+                        <ul class="list-unstyled">
+                            <li class="col-xs-12">
+                                <a href="#"><img src="images/img_favorite_normal.png" class="col-xs-4" />
+                                    <div class="col-xs-8"><span class="col-xs-12 col-sm-12">favorite item 1</span><span class="col-xs-12 col-sm-12">10 songs</span></div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#"><img src="images/img_favorite_normal.png" class="col-xs-4" />
+                                    <div class="col-xs-8"><span class="col-xs-12 col-sm-12">favorite item 1</span><span class="col-xs-12 col-sm-12">10 songs</span></div>
+                                </a>
+                            </li>
+                            <li class="col-xs-12">
+                                <a href="#"><img src="images/img_favorite_normal.png" class="col-xs-4" />
+                                    <div class="col-xs-8"><span class="col-xs-12 col-sm-12">favorite item 1</span><span class="col-xs-12 col-sm-12">10 songs</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_more col-xs-12">more</div>
+            </section>
+            <section class="collist col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                <h1><i class="ic_menu_reguestbook"></i> 點歌本</h1>
+                <div class="listview">
+                    <div class="menu-item">
+                        <ul class="list-unstyled">
+                            <!--<li class="col-xs-12"><img src="images/by_language.png" class="col-xs-6" />
+                                    <h3 class="col-xs-6">熱門精選</h3></li>-->
+                            <li class="col-xs-12"><img src="images/by_folder.png" class="col-xs-6" />
+                                <h3 class="col-xs-6">熱門精選</h3></li>
+                            <li class="col-xs-12"><img src="images/by_singer.png" class="col-xs-6" />
+                                <h3 class="col-xs-6">By singer</h3></li>
+                            <li class="col-xs-12"><img src="images/by_language.png" class="col-xs-6" />
+                                <h3 class="col-xs-6">By language</h3></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="playlist col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                <h1><i class="ic_menu_requestinglist"></i> 點播清單</h1>
+                <div class="listview">
+                    <div class="menu-item">
+                        <ul class="list-unstyled">
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_more col-xs-12">more</div>
+            </section>
+            <section class="history col-xs-12 col-sm-6 col-md-6 col-lg-4 col-rt15-3">
+                <h1><i class="ic_menu_history"></i> 歷史紀錄</h1>
+                <div class="listview">
+                    <div class="menu-item">
+                        <ul class="list-unstyled">
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                            <li class="col-xs-12">
+                                <img src="img/ic_thumbnail_default.png" class="col-xs-3" />
+                                <div class="col-xs-8"><span class="col-xs-12 col-sm-10">Song title</span><span class="col-xs-12 col-sm-2">artist</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_more col-xs-12">more</div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="pagination"><i class="btn_page_previous"></i> 1 / 2 / 3 / 4 / 5 / 6 <i class="btn_page_next"></i></div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="foot_bar navbar navbar-fixed-bottom">
+                <div class="tv_item">
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_menu_back"></i>
+                        <p>停止播放</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_play"></i>
+                        <p>播放</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_stop"></i>
+                        <p>切歌</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_repeat"></i>
+                        <p>重唱</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_guide"></i>
+                        <p>導唱</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_effect"></i>
+                        <p>製造音效</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_mutes"></i>
+                        <p>靜音</p>
+                    </div>
+                    <div class="col-xs-6 text-center three-icon">
+                        <p>value</p><i class="ic_controlbar_echo_s icon_border"></i> <i class="ic_controlbar_echo_m icon_border"></i> <i class="ic_controlbar_echo_l icon_border"></i>
+                        <p>迴音</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_key"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>音調調整</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_micvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>麥客風音量</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_musicvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>音樂音量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

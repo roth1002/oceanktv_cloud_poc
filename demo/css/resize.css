@@ -1,0 +1,217 @@
+/* NAV MENU */
+ul.navmenu li a,
+ul.navmenu li a:link,
+ul.navmenu li a:visited {
+  color: #7B868E;
+  font-weight: 400;
+}
+
+ul.navmenu li a:hover,
+ul.navmenu li a:active {
+  color: #474F55;
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 80%;
+  }
+
+  #mainmenu {
+    background: yellow;
+    padding-top: 48px;
+    width: 100%;
+  }
+
+  #mainmenu, .btn_switch, #dotarea, #page_control {
+    display: none;
+  }
+
+  #mainmenu i {
+    clear: both;
+  }
+
+  .btn_topmenu {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    color: #434343;
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    margin: 0.5rem;
+  }
+
+  .btn_topmenu:hover {
+    border-bottom: 2px solid #000;
+  }
+
+  .btn_switch img {
+    right: 60px;
+    top: 60px;
+  }
+
+  #mainmenu img {
+    right: 20px;
+    top: 64px;
+  }
+
+  #mainmenu img, .btn_switch img {
+    position: fixed;
+    z-index: 9997;
+  }
+
+  #mainmenu i.ic_topbar_More, .enlarge {
+    display: none;
+  }
+
+  #mainmenu i.ic_settings_multizone {
+    font-size: 1.25rem;
+    color: #434343;
+  }
+
+  .shrink {
+    font-size: 1rem;
+    color: #434343;
+  }
+
+  #mainmenu i.ic_topbar_help, #mainmenu i.ic_topbar_refresh, #mainmenu i.ic_topbar_Search_normal {
+    font-size: 1.125rem;
+    color: #434343;
+  }
+
+  .header_actived {
+    border-bottom: 2px solid #2f2f2f;
+  }
+
+  #tv_controller {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background: #001732;
+  }
+
+  #container {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  #favlist {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 100%;
+  }
+
+  .btn_topmenu {
+    display: none;
+  }
+
+  #mainmenu {
+    position: absolute;
+    text-align: right;
+    top: 14px;
+    right: 0;
+    margin-right: 26px;
+    width: 700px;
+  }
+
+  .btn_tvplayer {
+    margin-right: 20px;
+  }
+
+  .btn_switch img {
+    position: fixed;
+    right: 80px;
+    top: 11px;
+    z-index: 9997;
+  }
+
+  #mainmenu i.ic_topbar_More {
+    font-size: 1.125rem;
+    padding: 0 12px 12px 12px;
+    margin: 0 7px;
+    color: #434343;
+  }
+
+  #mainmenu i.ic_settings_multizone {
+    font-size: 1.25rem;
+    margin: 0 15px 0 50px;
+    padding-bottom: 12px;
+    color: #434343;
+  }
+
+  .enlarge, .shrink {
+    font-size: 1rem;
+    margin: 0 7px;
+    color: #434343;
+  }
+
+  i.ic_topbar_user_default {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    margin: 0 15px 0 7px;
+    color: #434343;
+    vertical-align: middle;
+  }
+
+  #mainmenu i.ic_topbar_help, #mainmenu i.ic_topbar_refresh, #mainmenu i.ic_topbar_Search_normal {
+    font-size: 1.125rem;
+    margin: 0 7px 0 7px;
+    color: #434343;
+    padding: 0 3px 12px 3px;
+  }
+
+  #mainmenu span {
+    color: #434343;
+  }
+
+  #mainmenu img {
+    vertical-align: -12px;
+    margin-left: 150px;
+  }
+
+  .header_actived {
+    border-bottom: 2px solid #2f2f2f;
+  }
+
+  #tv_controller {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background: #001732;
+  }
+
+  #dotarea {
+    display: inline-block;
+  }
+
+  #container {
+    overflow: hidden;
+  }
+
+  #favlist {
+    width: 538px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  section {
+    position: absolute;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 120%;
+  }
+}
