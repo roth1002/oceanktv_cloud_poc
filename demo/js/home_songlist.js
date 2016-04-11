@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $.getScript("playlist.json");
+    // $.getScript("playlist.json");
 });
