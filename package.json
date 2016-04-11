@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./static/ ./demo/static/ && webpack --config webpack.config.prod.js --progress && cp -a demo/* static/ && mv static/ demo/"
   },
   "author": "",
   "license": "ISC",

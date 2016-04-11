@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<title>oceanKTV_RWD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link href="css/qnap_style.css" rel="stylesheet">
+<link href="css/icon.css" rel="stylesheet">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/header_rwd.js"></script>
+
+<body>
+    <h4>input box:</h4>
+    <input type="text" name="FirstName" placeholder="placeholder">
+    <h4>disabled input box:</h4>
+    <input type="text" name="FirstName" placeholder="disabled" disabled>
+    <h4>select box:</h4>
+    <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <h4>hyperlink:</h4>
+    <a href="#">hyperlink</a>
+    <h4>rounded button:</h4>
+    <div class="btn_rounded yes">rounded button</div>
+    <h4>dropdown menu:</h4>
+    <div class="dropmenu">
+        <ul>
+            <li>Install OceanKTV Client</li>
+            <li>Language<i class="ic_submenu_open"></i><i class="btn_page_next"></i>
+            <div class="dropmenu select"><ul><li><i class="ic_topbar_selected"></i>Auto Detect</li><li>English</li><li>中文(簡)</li><li>中文(繁)</li></ul></div>
+            </li>
+            <li>Settings</li>
+        </ul>
+        <hr>
+        <ul>
+            <li>Quick Start</li>
+            <li>Help</li>
+        </ul>
+        <hr>
+        <ul>
+            <li>About</li>
+        </ul>
+    </div>
+    <h4>popup dialog - only text:</h4>
+    <div class="popup"><i class="btn_preview_close"></i>
+        <p><b>heading</b></p>
+        <p>test text.test text.test text.test text.test text.test text.test text.</p>
+        <div class="btn">
+            <div class="btn_square yes">Yes</div>
+            <div class="btn_square no">No</div>
+        </div>
+    </div>
+    <h4>popup alert/help:</h4>
+    <div class="popup"><i class="btn_preview_close"></i>
+        <div class="alert">
+            <div class="ic_help"></div>
+            <p>test text.test text.test text.test text.test text.test text.test text.</p>
+        </div>
+        <div class="btn">
+            <div class="btn_square yes">Yes</div>
+            <div class="btn_square no">No</div>
+        </div>
+    </div>
+    <h4>popup alert/info:</h4>
+    <div class="popup"><i class="btn_preview_close"></i>
+        <div class="alert">
+            <div class="ic_infomation"></div>
+            <p>test text.test text.test text.test text.test text.test text.test text.</p>
+        </div>
+        <div class="btn">
+            <div class="btn_square yes">Close</div>
+        </div>
+    </div>
+    <h4>popup alert/warning:</h4>
+    <div class="popup"><i class="btn_preview_close"></i>
+        <div class="alert">
+            <div class="ic_warning"></div>
+            <p>test text.test text.test text.test text.test text.test text.test text.</p>
+        </div>
+        <div class="btn">
+            <div class="btn_square yes">Yes</div>
+            <div class="btn_square no">No</div>
+        </div>
+    </div>
+    <h4>popup alert/error:</h4>
+    <div class="popup"><i class="btn_preview_close"></i>
+        <div class="alert">
+            <div class="ic_error"></div>
+            <p>test text.test text.test text.test text.test text.test text.test text.</p>
+        </div>
+        <div class="btn">
+            <div class="btn_square yes">Yes</div>
+            <div class="btn_square no">No</div>
+        </div>
+    </div>
+    <h4>popup window - no tab</h4>
+    <div class="popup_window"><i class="btn_preview_close"></i>
+        <div class="heading">Add to favorites</div>
+        <div class="content">
+            <ul class="select_list">
+                <li class="white">My favorite 1</li>
+                <li class="grey">My favorite My favorite My favorite 2</li>
+                <li class="white">My favorite My favorite 3</li>
+            </ul>
+        </div>
+        <div class="btn">
+            <div class="btn_square yes">Yes</div>
+            <div class="btn_square no">No</div>
+        </div>
+    </div>
+    <h4>popup window - with tabs</h4>
+    <div class="popup_window" id="settings"><i class="btn_preview_close"></i>
+        <div class="heading_tabs">Settings</div>
+        <div class="tabs">
+            <span class="btn_pre"><i class='btn_page_previous'></i></span>
+            <ul>
+                <li class="selected">Audio Output</li>
+                <li>Microphone</li>
+                <li>Style</li>
+                <li>Source path</li>
+            </ul>
+            <span class="btn_next"><i class='btn_page_next'></i></span>
+        </div>
+        <div class="content">
+            <div class="open_tab">
+                <p>Audio Output</p>
+                <ul>
+                    <li>HDMI</li>
+                    <li>Analog</li>
+                </ul>
+            </div>
+            <div class="open_tab">
+                <p>Select a microphone</p>
+                <ul>
+                    <li>HDMI</li>
+                    <li>Analog</li>
+                </ul>
+            </div>
+            <div class="open_tab">
+                <p>Style</p>
+                <ul class="select_img">
+                    <li class="selected"><img src="/static/images/bg_01_thumbnail.png" />
+                        <br>Style A</li>
+                    <li><img src="/static/images/bg_02_thumbnail.png" />
+                        <br>Style B</li>
+                    <li><img src="/static/images/bg_03_thumbnail.png" />
+                        <br>Style C</li>
+                    <li><img src="/static/images/bg_04_thumbnail.png" />
+                        <br>Style D</li>
+                    <li><img src="/static/images/bg_05_thumbnail.png" />
+                        <br>Style E</li>
+                </ul>
+            </div>
+            <div class="open_tab">
+                <p>Select the folders you want to add into OceanKTV.</p>
+                <div class="select_list">
+                    <div class="btn_group">
+                        <div class="btn_rounded yes">Add</div>
+                        <div class="btn_rounded no">Delete</div>
+                    </div>
+                    <div class="darkblue">Folder Path</div>
+                    <ul>
+                        <li class="white">OceanKTV/</li>
+                        <li class="grey">Karaoke/周杰倫</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="btn_square no">No</div>
+            <div class="btn_square yes">Yes</div>
+        </div>
+    </div>
+    <h4>message:</h4>
+    <div class="msg">message</div>
+</body>
+
+</html>
