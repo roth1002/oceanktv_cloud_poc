@@ -1,8 +1,32 @@
-var koa = require('koa');
-var serve = require('koa-static');
-var app = koa();
-var port = process.env.PORT || 3000;
+var path = require('path');
+var express = require('express');
+var webpack = require('webpack');
+var config = require('./webpack.config.dev');
 
-app.use(serve('demo'));
+var app = express();
+var compiler = webpack(config);
 
-app.listen(port);
+app.use('/static', express.static(__dirname + '/public'));
+
+app.use(require('webpack-dev-middleware')(compiler, {
+  // noInfo: true,
+  publicPath: config.output.publicPath,
+  stats: {
+    colors: true
+  }
+}));
+
+app.use(require('webpack-hot-middleware')(compiler));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'app/index.html'));
+});
+
+app.listen(3000, 'localhost', function(err) {
+  if (err) {
+    console.log(err);
+    return;
+  }
+
+  console.log('Listening at http://localhost:3000');
+});
