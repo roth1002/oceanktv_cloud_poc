@@ -1,0 +1,45 @@
+$song-block-img-width: 240px;
+$song-play-icon-size: xx-large;
+$song-play-icon-color: white;
+$song-play-icon-active-color: tomato;
+$song-play-mask-color: rgba(0,0,0,0.7);
+
+.pop-list
+	display: flex
+	-webkit-flex-flow: row wrap
+			-ms-flex-flow: row wrap
+					flex-flow: row wrap
+
+.song-block
+	margin: 15px
+	position: relative
+	.song-img
+		max-width: $song-block-img-width
+	.song-title
+		max-width: $song-block-img-width
+		-ms-text-overflow: ellipsis
+				text-overflow: ellipsis
+		white-space: nowrap
+		overflow: hidden
+	.song-mask
+		display: none
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: $song-play-mask-color
+		color: $song-play-icon-color
+		font-size: $song-play-icon-size
+		display: flex
+		-webkit-justify-content: center
+						justify-content: center
+		-webkit-align-items: center
+						align-items: center
+		.song-play-icon:hover
+ 			-webkit-transform: scale(2)
+ 			-moz-transform: scale(2)
+ 			-ms-transform: scale(2)
+ 			-o-transform: scale(2)
+ 			transform: scale(2)
+		.song-play-icon:active
+ 			color: $song-play-icon-active-color
