@@ -1,0 +1,24 @@
+$toast-bg-color: rgba(0,0,0,0.8);
+$toast-font-color: white;
+
+.toast-block
+	position: fixed
+	top: 0
+	z-index: 100
+	width: 100%
+	display: flex
+	-webkit-justify-content: center
+	justify-content: center
+
+.toast
+	width: auto
+	height: auto
+	text-align: center
+	padding: 2%
+	color: $toast-font-color
+	background-color: $toast-bg-color
+	transform: translateY(-120%)
+	transition-duration: 0.5s
+
+.toast.is-visible
+   transform: translateY(0)
