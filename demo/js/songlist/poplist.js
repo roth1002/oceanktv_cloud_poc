@@ -1,6 +1,7 @@
 import fakeData from '../../../data.json';
 import '../../sass/songlist.sass';
 import { postSongToQueueUrl } from '../config/url';
+import toast from '../utils/toast';
 
 /* DOM */
 const $popListBlock = $('#pop-list');
@@ -35,12 +36,16 @@ function template(song) {
       <img class="song-img" src="${song.thumbnails.medium.url}"/>
       <p class="song-title">${song.title}</p>
       <div class="song-mask">
-				<i class="song-play-icon ic_controlbar_play" id="${song.id}" onclick="playYoutube(this)"></i>
+				<i class="song-play-icon ic_controlbar_play"
+					id="${song.id}"
+					name="${song.title}"
+					onclick="playYoutube(this)"></i>
       </div>
     </div>`
   );
 }
 
 function playYoutube(elmnt) {
-	$.post(postSongToQueueUrl, { songid: elmnt.id, flow: 0 });
+	$.post(postSongToQueueUrl, { songid: elmnt.id, flow: 0 })
+		.done(() => { toast(elmnt.getAttribute('name')) });
 }
