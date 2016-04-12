@@ -10,6 +10,7 @@ $song-play-mask-color: rgba(0,0,0,0.7);
 			-ms-flex-flow: row wrap
 					flex-flow: row wrap
 
+
 .song-block
 	margin: 15px
 	position: relative
@@ -23,6 +24,7 @@ $song-play-mask-color: rgba(0,0,0,0.7);
 		overflow: hidden
 	.song-mask
 		display: none
+		cursor: pointer
 		position: absolute
 		top: 0
 		width: 100%
@@ -30,7 +32,6 @@ $song-play-mask-color: rgba(0,0,0,0.7);
 		background-color: $song-play-mask-color
 		color: $song-play-icon-color
 		font-size: $song-play-icon-size
-		display: flex
 		-webkit-justify-content: center
 						justify-content: center
 		-webkit-align-items: center
@@ -43,3 +44,8 @@ $song-play-mask-color: rgba(0,0,0,0.7);
  			transform: scale(2)
 		.song-play-icon:active
  			color: $song-play-icon-active-color
+
+
+.song-block:hover
+	.song-mask
+		display: flex

@@ -1,16 +1,26 @@
 import fakeData from '../../data.json';
 import '../sass/songlist.sass';
 
+let $popListBlock;
+
 $(document).ready(init);
 
 function init() {
-	console.log('%c Init: songlist','color:tomato;font-weight:bold;');
+	console.log('%c Init: songlist ','background-color:teal;color:white;');
 
 	// DOM Elements
-	const $popListBlock = $('#pop-list');
+	$popListBlock = $('#pop-list');
 
+	// Functions
+	window.playYoutube = playYoutube;
+
+
+	renderFetchedPopList();
+}
+
+function renderFetchedPopList() {
 	const popSongs = fetchPopList();
-	$popListBlock.append(popSongs)
+	$popListBlock.append(popSongs);
 }
 
 function fetchPopList() {
@@ -25,12 +35,18 @@ function popSongsTemplate(list) {
 
 function template(song) {
   return (
-    `<div class="song-block" id="${song.video_id}">
+    `<div class="song-block">
       <img class="song-img" src="${song.thumbnails.medium.url}"/>
       <p class="song-title">${song.title}</p>
       <div class="song-mask">
-      	<i class="song-play-icon ic_controlbar_play"></i>
+				<i class="song-play-icon ic_controlbar_play" id="${song.id}" onclick="playYoutube(this)"></i>
       </div>
     </div>`
   );
-};
+}
+
+function playYoutube(elmnt) {
+	const id = elmnt.id;
+	console.log(`%c id : ${id} `,'color:#f69;font-weight:bold;')
+	// TODO: ajax
+}
