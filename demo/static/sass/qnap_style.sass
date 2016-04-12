@@ -1,0 +1,174 @@
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+/*qnap style*/
+body
+	font-family: "Roboto",Helvetica,Arial,Sans-serif,Verdana,Tahoma
+	font-size: 16px
+a,a:link
+	color: #0071ba
+	text-decoration: underline
+a:hover
+	color: #015def
+	text-decoration: underline
+a:active
+	color: #7eaefe
+	text-decoration: underline
+a:visited
+	color: #753f94
+	text-decoration: underline
+.warning
+	color: #c1272d
+.info
+	color: #195a87
+.disable
+	opacity: .5
+.tooltip
+	border: 0.0625rem solid #767676
+	background: #fefefe /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#fefefe, #e5e4f2) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fefefe, #e5e4f2) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fefefe, #e5e4f2) /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fefefe, #e5e4f2) /* Standard syntax (must be last) */ 
+	color: #2f2f2f
+	font-size: 0.75rem
+.mask
+	background-color: rgba(0,0,0,.4)
+/*message*/
+.msg
+	background-color: rgba(50,50,50,.95)
+	border: 1px solid #fff
+	color: #fff
+	font-size: 1rem
+	padding: 1.5rem
+	display: inline-block
+/*popup*/
+.popup
+	background-color: #fafafa
+	border: 1px solid #b0b0b0
+	display: inline-block
+	padding: 1.5rem
+.popup_window
+	background-color: #fafafa
+	border: 1px solid #b0b0b0
+	display: inline-block
+.popup_window .heading
+	border-bottom: 0.0625rem solid #b0b0b0
+	color: #000
+	font-size: 1.25rem
+	font-weight: 700
+	padding: 1.1875rem 2.1875rem
+.popup_window .heading_tabs
+	border-bottom: none
+	color: #000
+	font-size: 1.25rem
+	font-weight: 700
+	padding: 1.1875rem 2.1875rem
+.popup_window .tabs
+	color: #000
+	display: inline-block
+	width: 100%
+	height: 1.25rem
+	border-bottom: 0.0625rem solid #b0b0b0
+.popup_window .tabs ul
+	margin: 0.0625rem 0 0 -0.25rem
+.popup_window .tabs ul li
+	display: inline-block
+	margin-top: -20px
+	padding: 0 1.5625rem
+	font-size: 0.875rem
+.popup_window .tabs ul .selected
+	border-bottom: 0.125rem solid #2f2f2f
+.popup_window .content
+	margin: 1.25rem 2.1875rem 0 2.1875rem
+	border: 1px dotted red
+	min-height: 9.875rem
+.popup_window .btn_preview_close
+	position: relative
+	float: right
+	margin: 10px 10px 0 0
+	font-size: 0.625rem
+.popup .alert > p
+	margin: -1.5rem 1rem 0 3rem
+.ic_infomation, .ic_help, .ic_warning, .ic_error
+	display: block
+	height: 2rem
+	width: 2rem
+.popup .ic_infomation
+	background: url("../images/info.png") no-repeat
+.popup .ic_help
+	background: url("../images/help.png") no-repeat
+.popup .ic_warning
+	background: url("../images/warning.png") no-repeat
+.popup .ic_error
+	background: url("../images/error.png") no-repeat
+.popup .btn_preview_close
+	position: relative
+	float: right
+	margin: -10px -10px 0 0
+	font-size: 0.625rem
+.popup p
+	color: #2f2f2f
+	font-size: 0.875rem
+.popup .btn, .popup_window .btn
+	display: inline
+	position: relative
+	float: right
+	margin-top: 1.25rem
+.popup_window .btn
+	margin: 1.25rem 2.1875rem 1.5rem -27px
+.popup .btn:active
+	margin-top: 1.25rem
+.popup_window .btn:active
+	margin: 1.25rem 2.1875rem 1.5rem -25px
+.btn_rounded
+	display: inline-block
+	background-color: #fff
+	font-size: 0.75rem
+	+border-radius(0.5rem)
+	font-size: 0.75rem
+	padding: 0.3125rem 1.375rem
+.btn_square
+	display: inline-block
+	background-color: #fff
+	font-size: 0.875rem
+	padding: 0.5rem 1.375rem
+	margin: 0 0.25rem
+	min-width: 5rem
+	text-align: center
+.btn_square:active
+	padding: 0.4375rem 1.25rem
+	margin: 0 0.3125rem
+.btn_rounded:active
+	padding: 0.25rem 1.3125rem
+.yes
+	border: 0.0625rem solid #707070
+	color: #2f2f2f
+.no
+	border: 0.0625rem solid #2f2f2f
+	color: #2f2f2f	
+.yes:hover
+	border: 0.0625rem solid #707070
+	color: #707070
+.no:hover
+	border: 0.0625rem solid #2f2f2f
+	color: #707070	
+.yes:active
+	border: 0.125rem solid #2f2f2f
+	color: #2f2f2f
+.no:active
+	border: 0.125rem solid #2f2f2f
+	color: #2f2f2f	
+/*form*/
+input[type=text], select
+	border: 1px solid #848484
+	background-color: #fff
+	padding: 0 0.625rem
+	height: 1.5rem
+	outline: none
+input[type=text]:focus
+	border: 1px solid #000
+input[type=text]:disabled
+	border: 1px solid #aeaeae

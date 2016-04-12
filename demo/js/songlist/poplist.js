@@ -1,5 +1,5 @@
-import fakeData from '../../data.json';
-import '../sass/songlist.sass';
+import fakeData from '../../../data.json';
+import '../../sass/songlist.sass';
 
 let $popListBlock;
 

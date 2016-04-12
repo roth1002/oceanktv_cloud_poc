@@ -1,0 +1,1625 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed)
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css)
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css)
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css)
+@import resize
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius:	$radius
+	border-radius:	$radius
+body
+	overflow-y: hidden
+	overflow-x: auto
+	background: #000
+	font-size: 1rem
+.logo
+	height: 32px
+	margin: 7px 0 0 1.875rem
+.logo .wording
+	color: #999
+.deco
+	position: absolute
+	left: 0
+	width: 100%
+	height: 0.5rem
+	background: -webkit-linear-gradient(left top,#0258a8, #17abd4) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right,#0258a8, #17abd4) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right,#0258a8, #17abd4) /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #0258a8, #17abd4) /* Standard syntax */
+#container 
+	position: absolute
+	height: 100%
+	margin: 0 100px
+.clear 
+	clear: both
+body, h2, h3, h4, h5, h6, p,ul li
+	font-family: "Roboto",Helvetica,Arial,Sans-serif,Verdana,Tahoma,'Noto Sans KR','Noto Sans Japanese','Noto Sans SC'
+	color: #fff
+h1
+	color: #fff
+	text-align: left 
+h1, h2, h3, h4, h5, h6, p
+	text-shadow: 1px 1px 2px rgba(0,0,0,.6)
+.c_info
+	color: #00ffff
+	display: inline-block
+	width: 100%
+.controller
+	margin: auto
+	background: #001732
+.controller i
+	text-align: center
+	font-size: 2.2rem
+.controlbar_leave i
+	color: #fff
+	border: 1px solid #fff
+	+border-radius(50px)
+	display: inline-block
+	height: 1.875rem
+	width: 1.875rem
+	padding: 6px
+	font-size: 1.2rem
+	margin-bottom: 4px
+.controlbar_leave h4
+	color: #fff
+.controlbar h4, .controlbar_leave h4, .music_config h4
+	text-align: center
+	font-size: 1rem
+	margin-top: -0.05em
+	text-shadow: none
+.controller a.controlbar_leave
+	color: #fff
+	display: inline-block
+.controller a.controlbar
+	color: #fff
+	display: inline-block
+.controller_actived, .controller_actived h4 
+	color: #c3006d
+.controlbar div, .controlbar_leave div
+	width: 6vw
+	padding: 42px 0 10px 0
+.controlbar div:hover, .controlbar_leave div:hover
+	background: rgba( 255, 255, 255, 0.2)
+.navbar
+	position: fixed
+	width: 100%
+	background: #fff
+	height: 44px
+#bgvid
+	position: fixed
+	top: 50%
+	left: 50%
+	min-width: 100%
+	min-height: 100%
+	width: auto
+	height: auto
+	transform: translateX(-50%) translateY(-50%)
+	background-size: cover
+	transition: 1s opacity
+.bg0
+	background: url("../images/bg_01.png") no-repeat
+.bg1
+	background: url("../images/bg_02.png") no-repeat
+.bg2
+	background: url("../images/bg_03.png") no-repeat
+.bg3
+	background: url("../images/bg_04.png") no-repeat
+.maskbg
+	text-align: center
+	display: none
+	position: fixed
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	background: rgba(0,0,0,0.4)
+	z-index: 1000
+.maskbg_second
+	position: fixed
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	background: rgba(0,0,0,0.4)
+	z-index: 1010
+.maskbg table tr
+	text-align: left
+video
+	background: url("../img/vbg.jpg") center
+	background-size: 720px 480px
+	width: 720px
+	height: 480px
+	margin: -30px -38px
+	z-index: -1
+	border: 1px solid #000
+.popup, .popup_second
+	background: rgba(250,250,250,.9)
+.popup_second
+	position: absolute
+	margin: 20vh 40vw
+	z-index: 10000
+	padding: 24px 35px
+	border: 1px solid #2f2f2f
+.popup
+	position: relative
+	display: inline-block
+	margin: auto
+	padding: 24px 35px
+	vertical-align: middle
+	top: 20%
+.popup h4, .popup_second h4
+	margin-top: 0
+	margin-bottom: 40px
+	font-weight: 600
+	color: #000
+	text-align: left
+	text-shadow: none
+.popup ul,.popup li, .popup p, .popup label, .popup_second li
+	text-align: left
+	color: #2f2f2f
+	font-weight: 500
+	text-shadow: none
+.popup h5
+	margin-top: 20px
+	text-align: left
+	color: #2f2f2f
+	font-weight: 700
+	text-shadow: none
+.popup .rename
+	width: 100%
+	height: 34px
+	margin: -40px 0 0 0
+	color: #2f2f2f
+	padding: 8px
+.popup .img_bg img
+	margin-right: 12px
+	border: 2px solid rgba(250,250,250,0)
+.popup .ic_msg
+	padding-right: 16px
+	vertical-align: top
+.popup .confirm_text
+	color: #2f2f2f
+	display: block
+	height: 34px
+	padding-right: 16px
+	text-align: left
+.popup .confirm_t
+	display: inline-block
+	color: #2f2f2f
+	text-align: left
+	width: 335px
+.popup .confirm_t>input
+	margin-top: 20px
+.img_bg li
+	display: inline-block
+	float: left
+.popup_arti
+	display: inline-block
+	float: right
+	width: 150px
+	padding: 6px 0
+.img_bg p
+	text-align: center
+.img_bg img:hover
+	border: 2px solid #00ffff
+.popup hr
+	background: #b0b0b0
+	height: 1px
+	width: 100%
+	position: absolute
+	left: 0
+	top: 42px
+.popup button, .popup_second button
+	height: 30px
+	padding: 0 22px
+	background: #fff
+	border: 1px solid #707070
+	color: #2f2f2f
+	font-size: 0.875rem
+	float: right
+	margin: 20px 0 0 8px 
+.popup button:hover, .folder_tool li:hover
+	border: 1px solid #707070
+	color: #707070
+.popup button:active, .folder_tool li:active
+	border: 2px solid #707070
+	padding: 0 21px
+	color: #2f2f2f
+.popup button:disabled
+	border: 1px solid #aeaeae
+	color: #aeaeae
+.popup .ic_prelisten
+	margin: 0 0.3em
+	font-size: 1rem
+.popup .ic_prelisten:hover
+	color: #00c9ff
+.prelisten_enable
+	color: #00c9ff
+.popup_right
+	position: absolute
+	right: 52px
+	top: 58px
+.popup_right .ic_toolbar_multiselect_off
+	color: #4d4d4d
+.popup_right .ic_toolbar_multiselect_off:hover
+	font-weight: 700
+.popup_pager
+	display: inline-block
+	width: 100%
+	color: #4d4d4d
+	height: 1.4em
+	padding: 10px 0 20px 0
+.popup_pager .ic_action_remove
+	position: absolute
+	left: 46px
+	font-size: 1.2rem
+.popup_pager p
+	position: absolute
+	right: 35px
+button:focus, #btn_search:focus
+	outline: none
+.popup .progress
+	height: 8px
+	width: 100%
+	+border-radius(0)
+	position: absolute
+	bottom: -28px
+	left: 0
+.qrcode
+	width: 100%
+	text-align: center
+.qrcode img
+	width: 120px
+	margin-top: 40px
+	padding: 8px
+.qrcode img:hover
+	box-shadow: 0 0 10px rgba(0,0,0,.6)
+.qrcode img:active
+	opacity: .6
+.qrcode p
+	text-align: center
+.tab_hr
+	background: #b0b0b0
+	height: 1px
+	width: 100%
+	position: absolute
+	left: 0
+	top: 78px
+.tab
+	margin-top: -27px
+	margin-bottom: 20px
+.tab li
+	display: inline-block
+	padding: 0 25px
+	color: #2f2f2f
+.tab li:hover
+	font-weight: 700
+.tab_enable
+	color: #000
+	font-weight: 700
+	border-bottom: 2px solid #2f2f2f
+.align_r
+	text-align: right
+	color: #2d2f2e
+	padding-right: 6px
+.align_rr
+	text-align: right
+	color: #2d2f2e
+	padding: 6px 14px
+	clear: both
+.popup select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	margin-left: -284px
+	padding: 0 10px
+	height: 34px
+	color: #2f2f2f
+	width: 200px
+	text-align: left
+	display: inline-block
+	background-color: transparent
+	border: 1px solid #b0b0b0
+.popup .btn_select
+	color: #000
+	position: absolute
+	margin: 10px 0 0 -120px
+.popup option
+	padding: 10px
+.popup form
+	width: 550px
+.radio-inline 
+	float: left
+	margin-left: -30px
+.btn_preview_close
+	position: absolute
+	right: 15px
+	top: 15px
+	z-index: 999
+	color: #939393
+.delete
+	color: #939393
+	float: right
+	margin: -10px -10px 0
+.btn_close .delete
+	color: #939393
+	float: right
+	margin: -15px -25px 0
+.btn_help .ic_topbar_help
+	color: #939393
+	float: right
+	margin: -15px 0
+.delete:hover, .btn_preview_close:hover
+	color: #bababa
+h4 .btn_mainpage_backstratum:hover 
+	color: #7e7e7e
+	background: rgba(0,0,0,.1)
+	border-color: #7e7e7e
+.delete:active, .btn_preview_close 
+	color: #6d6d6d
+h4 .btn_mainpage_backstratum:active
+	color: #6d6d6d
+	border-color: #6d6d6d
+.btn_close_help i
+	+border-radius(15px)
+	width: 18px
+	height: 18px
+	display: inline-block
+	margin: 10px
+	padding-top: 4px
+	background: #939393
+	color: #fff
+	z-index: 9999
+	font-size: 0.625rem
+.btn_close_help i:hover
+	background: #bababa
+	color: #fff
+.btn_close_help i:active
+	background: #6d6d6d
+	color: #fff
+.help
+	height: 1000px
+.help_c
+	background: #f1f1f1
+	position: absolute
+	top: 50px
+	width: 650px
+	height: 100%
+	right: 0
+	overflow-y: scroll
+	overflow-x: hidden
+.tutorial, .tutorial p
+	width: 650px
+	color: #2f2f2f
+	text-align: center
+	padding-bottom: 15px
+	text-shadow: none
+.tutorial img
+	margin: 60px 0 25px 0 
+.btn_start
+	display: inline-block
+	height: 30px
+	padding: 7px 40px
+	background: #fff
+	border: 1px solid #707070
+	color: #2f2f2f
+	font-size: 0.9375rem
+	height: 38px
+.btn_start:hover
+	color: #707070
+.t_content
+	width: 650px
+.t_content ul
+	margin-bottom: 15px
+.container_help p, .container_help h1, .container_help h4
+	text-shadow: none
+.t_content a, .about_footer a, .container_help a
+	color: #0071ba
+	text-decoration: underline
+.t_content a:hover, .about_footer a:hover, .container_help a:hover
+	color: #015def
+.t_content a:active, .about_footer a:active, .container_help a:active
+	color: #7eaefe
+.t_content a:visited, .about_footer a:visited, .container_help a:visited
+	color: #753f94
+//about 68 icon
+.icon 
+	display: inline-block
+	width: 100%
+	margin: 30px 0 34px 0
+.about
+	color: #646464
+	width: 360px
+	height: 414px
+	background: #fafafa
+	position: relative
+	display: inline-block
+	margin: auto
+	vertical-align: middle
+	top: 20%
+.about_title
+	display: inline-block
+	text-align: left
+	width: 100%
+	height: 40px
+	border-bottom: 1px solid #b0b0b0
+	padding: 10px 18px 0 18px
+.about_title .ic_info
+	font-size: 1.125rem
+	margin-right: 6px
+.about_title h4
+	display: inline
+	color: #000
+	text-shadow: none
+.about_title .btn_close
+	margin: -8px 16px
+.about_content
+	text-align: center
+.about_content p
+	clear: both
+	display: inline-block
+	width: 180px
+	text-align: center
+	padding-top: 14px
+	margin-top: 14px
+	border-top: 1px solid #dfdfdf
+	color: #646464
+	text-shadow: none
+.about_footer
+	text-align: left
+	padding: 0 18px 14px 18px
+	position: absolute
+	bottom: 0
+	width: 100%
+	vertical-align: bottom
+.about_footer_l
+	float: left
+	bottom: 0
+	height: 100%
+	display: inline-block
+.about_footer a
+	color: #646464
+	margin-left: 10px
+	font-size: 0.75rem
+.about_footer p
+	font-size: 0.625rem
+	-webkit-transform: scale(0.83)
+	-webkit-transform-origin-x: 0
+	vertical-align: bottom
+	color: #b1b1b1
+	text-shadow: none
+.ic_qts
+	position: absolute
+	float: right
+	right: 18px
+	bottom: 24px
+//header
+.loading
+	position: absolute
+	width: 100%
+	height: 100%
+	text-align: center
+	display: block
+	z-index: 10000
+.qts_msg
+	display: inline-block
+	background: rgba(50,50,55,0.95)
+	border: 1px solid #fff
+	padding: 24px
+	margin-top: 25%
+.loading img
+	color: red
+	width: 16px
+	height: 16px
+	margin-right: 16px
+.sp_line
+	height: 15px
+	background: #2f2f2f
+	width: 1px
+	bottom: 0
+	z-index: 9999
+	display: inline-block
+	margin: 0 13px -15px 16px
+.sp_line_long
+	height: 30px
+	background: #2f2f2f
+	width: 1px
+	bottom: 0
+	z-index: 9999
+	display: inline-block
+	margin: 0 25px -15px 25px
+.sp_line_white1
+	padding-left: 28px
+	border-right: 1px solid #838383
+	height: 15px
+	width: 1px
+	bottom: 0
+	z-index: 9999
+	display: none
+	margin: 0 0 -15px 0
+.sp_line_white
+	height: 15px
+	background: #838383
+	width: 1px
+	bottom: 0
+	z-index: 9999
+	display: inline-block
+	margin: 0 0 -15px 0
+.ic_menu_home
+	+border-radius(100px)
+	background: #26d2a7 /*#ff004e*/
+	color: #fff
+	font-size: 1.1rem
+	padding: 0.44em
+	box-shadow: 1px 1px 2px rgba(0,0,0,.6)
+.ic_menu_home:hover
+	opacity: .5
+.ic_menu_home:active
+	opacity: .9
+//search
+#searchbar
+	margin: 80px 0 17px 0
+	width: 80%
+#search_ls
+	display: inline-block
+	position: absolute
+	right: 0
+	padding: 0 45px
+	width: 960px
+	background: #e8e8e8
+.search
+	display: none
+	width: 100%
+	height: 100vh
+.search h4
+	text-align: left
+	color: #2e2e2e
+.search tbody td
+	background: rgba(189,189,189,0.5)
+	color: #2f2f2f
+#s_result td:hover, #a_result td:hover, #as_result td:hover
+	background: rgba(45,161,196,.15)
+.search_focus
+	background: rgba(30,60,72,1)
+.c_totoal
+	position: absolute
+	right: 0
+	font-size: 0.875rem
+	color: #2f2f2f
+	margin-right: 45px
+.dropdown-menu 
+	background: #fff
+	z-index: 9999
+.dropdown-menu li
+	display: none
+.dropdown-menu > li > a:hover
+	background: #defefd
+#btn_dropmenu
+	width: 100px
+	text-align: left
+	background: #fff
+#btn_dropmenu span
+	position: absolute
+	right: 0
+	margin: 8px 10px 0 0
+//home container---------------------------------------//
+#container h1
+	padding-left: 8px
+	font-size: 1.8rem
+#container h1 i
+	padding-right: 8px
+.menu-item li
+	width: 100%
+	margin-bottom: 2px
+	display: inline-block
+.menu-item a
+	width: 100%
+	background: rgba(0,0,0,0.3)
+	display: inline-block
+.menu-item li a:hover 
+	background: rgba(0, 0, 0,.5)
+#listnav .ic_toolbar_multiselect_off
+	display: none
+	padding-right: 6px
+	border-right: 1px solid rgba(255,255,255,.4)
+.btn_selectall:hover
+	background: #313131
+	padding: 13px 0 13px 6px
+	margin-left: -6px
+#listnav .ic_topbar_triangle
+	display: none
+	position: absolute
+	top: 11px
+	width: 16px
+	height: 1em
+	background: url("../images/ic_toolbar_dropdowm.png") center no-repeat
+#listnav .ic_topbar_triangle:hover
+	background: #393939 url("../images/ic_toolbar_dropdowm.png") center no-repeat
+	padding: 20px 0
+	top: 0
+#favlist li
+	width: 100%
+	vertical-align: middle
+	text-shadow: 1px 1px rgba(0,0,0,.8)
+#favlist .btn_more
+	text-align: right
+#songbook
+	width: 349px
+#songbook a
+	margin-bottom: 10px
+#songbook img
+	display: inline
+	float: left
+	width: 224px
+	position: absolute
+	left: -14px
+#historylist, #playlist
+	width: 550px
+#page_control
+	color: #fff
+#page_control i
+	color: rgba( 255, 255, 255, 0.3)
+	font-size: 2rem
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, .6)
+#page_pre 
+	float: left
+	position: fixed
+	top: 50%
+	left: 20px
+	z-index: 998
+#page_next
+	float: right
+	position: fixed
+	top: 50%
+	right: 20px
+	z-index: 998
+#page_control a:hover i
+	color: rgba( 255, 255, 255, 1)
+#searchbox
+	position: absolute
+	right: 400px
+	top: 41px
+	width: 180px
+#alert1
+	display: none
+	position: absolute
+	margin-left: 50%
+	background: rgba(0,0,0,1)
+	padding: 24px
+	z-index: 9999 
+	text-align: center
+#alert1 p
+	padding: 2px 40px 0 0
+#alert1 .ic_message_control, #alert1 .ic_message_songaction
+	padding-right: 12px
+	color: #00afff
+.custom-tab
+	width: 100%
+	height: 100%
+/*sidebar------------------------------------------------------------------------------------*/
+/*new style20151020 start*/
+.btn_home
+	display: block
+	width: 99px
+	height: 90px
+	bottom: 0
+	left: 0
+	margin-bottom: 150px
+	z-index: 996
+	padding: 20px
+	text-align: center
+	background: #000
+.btn_home i
+	border: none
+.btn_home p
+	margin-top: 0.1em
+	font-size: 0.875rem
+	letter-spacing: 2px
+	color: rgba(255,255,255,1)
+	text-align: center
+/*new style20151020 end*/
+#sidebar
+	z-index: 99
+	width: 100px
+	height: 100%
+	position: fixed
+	left: 0
+	top: 50px
+	background: #000
+#sidebar
+	font-size: 2rem
+.sidebar_item
+	width: 99px
+	padding: 20px
+.sidebar_item p
+	margin-top: -0.3em
+	font-size: 0.875rem
+	letter-spacing: 2px
+	color: rgba(255,255,255,1)
+#sidebar a, .btn_home a
+	color: rgba(255,255,255,1)
+a:hover .sidebar_item, .btn_home:hover
+	background: rgba(255,255,255,0.2)
+	color: rgba(255,255,255,1)
+a:hover .sidebar_item p, .btn_home:hover p, .btn_home:hover i
+	color: rgba(255,255,255,1)
+.item_focus
+	background: #0d4b91
+	color: rgba(255,255,255,1)
+.item_focus p
+	color: rgba(255,255,255,1)
+p .item_focus 
+	color: rgba(255,255,255,1)
+#tabitem
+	overflow-y: auto
+	overflow-x: hidden
+	display: none 
+	position: fixed
+	top: 50px
+	left: 100px
+	width: 230px
+	height: 100%
+	font-size: 0.875rem
+	background: -webkit-linear-gradient(-74deg, rgba(45,66,105,0),rgba(20,46,81,.4), rgba(41,86,122,1)) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(164deg, rgba(45,66,105,0),rgba(20,46,81,.4), rgba(41,86,122,1)) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(164deg, rgba(45,66,105,0),rgba(20,46,81,.4), rgba(41,86,122,1)) 
+	background: linear-gradient(164deg, rgba(45,66,105,0),rgba(20,46,81,.4), rgba(41,86,122,1)) /* Standard syntax (must be last) */
+#tabitem h6
+	color: #fff
+	text-align: left
+	padding: 10px 0 0 6px
+	margin-left: -8px
+	font-size: 0.875rem
+#tabitem h6 i
+	padding: 0 7px 0 16px
+#tabitem .retracted 
+	display: block
+	padding-left: 52px
+#tabitem ul
+	margin-top: 10px
+#tabitem li
+	padding: 0 0 0 16px
+	line-height: 32px
+	text-align: left
+#tabitem li:active
+	background: rgba(0,0,0,.8)
+.item_hover, .add_myfav:hover
+	background: rgba(0,0,0,.5)
+.item_actived
+	color: #05eded
+#listview
+	position: fixed
+	right: 0
+	height: 100%
+	display: none
+	top: 50px
+#listview h1, h2
+	color: #fff
+	padding-left: 20px
+	font-size: 2.2rem
+#listv span, #s_result span, #a_result span, #filelist span, #playlist_wait span
+	padding-right: 15px
+#listnav
+	background: #434343
+	position: relative
+	left: 0
+	height: 40px
+	z-index: 999
+	display: none
+	width: 9999px
+	padding: 9px 0 0 20px
+#listnav i
+	color: #fff
+a.hotkey
+	padding: -4px 20px
+a.toolbar_big i
+	font-size: 1.25rem
+	padding: 10px
+	vertical-align: middle
+	clear: both
+a:hover.toolbar_big
+	background: #313131
+	padding: 13px 0
+.toolbar_disabled
+	opacity: .5
+.hotkey
+	+border-radius(20px)
+	border: 1px solid #fff
+	font-size: 0.8rem
+	display: inline-block
+	padding: 2px 20px
+	color: #fff
+	margin: 0 0 0 20px
+.hotkey:hover
+	background: #313131
+.text-c
+	width: 170px
+	position: absolute
+	text-align: center
+	margin-top: -120px
+.text-c_none
+	width: 170px
+	position: absolute
+	text-align: center
+	margin-top: -100px
+#songbook .text-col
+	width: 175px
+	height: 160px
+	display: inline-block
+	vertical-align: top
+	background: rgba(0,0,0,.2) /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,.2), rgba(0,0,0,0)) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right,rgba(0,0,0,.2), rgba(0,0,0,0)) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right,rgba(0,0,0,.2), rgba(0,0,0,0)) /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right,rgba(0,0,0,.2), rgba(0,0,0,0)) /* Standard syntax */
+	float: right
+.text-col h4
+	margin: 40% auto
+//----------------------songlist---------------------
+.songlist
+	width: 100%
+	text-align: left
+	padding: 4px
+.tab-pane
+	margin-top: -20px
+.songlist_in, .singerlist
+	width: 100%
+	text-align: left
+.tag_count
+	float: right
+	margin-right: 10px
+span.grid-2
+	position: relative
+	display: inline-block
+	width: 380px
+span.grid-3
+	position: relative
+	display: inline-block
+	width: 290px
+span.grid-1
+	position: relative
+	display: inline-block
+	width: 70px
+span.selectall_song 
+	padding-left: 25px
+th input
+	position: absolute
+	z-index: 99
+th i
+	color: #8f8f8f
+	padding: 10px 8px
+	font-size: 0.8rem
+img.thumb
+	margin: 0 15px 2px 25px
+	width: 78px
+	height: 44px
+	vertical-align: middle
+img.thumb_home
+	margin: 0 15px 2px -30px
+	width: 78px
+	height: 44px
+	vertical-align: middle 
+.sort img
+	display: inline
+	float: left
+.singerlist td
+	padding: 11px 0 0 27px
+.songlist_in td, .songlist td 
+	padding: 2px 0 0 38px
+.singerlist td, .songlist_in td, .songlist td 
+	background: rgba(0,0,0,.3)
+.songlist_i td
+	padding: 2px 0 0 38px
+#s_result table, #a_result table, #s_result tbody, #a_result tbody,#s_result td, #a_result td
+	width: 870px
+	display: inline-block
+	text-shadow: none
+#s_result tbody, #a_result tbody
+	height: 500px
+#listv table, #listv td,#listv tbody, #filelist table, #filelist td, #filelist tbody, #playlist_wait table, #playlist_wait td, #playlist_wait tbody
+	width: 76vw
+	display: inline-block
+#subhistory table, #subhistory td,#subhistory tbody
+	width: 92vw
+	display: inline-block
+#s_result th, #a_result th
+	display: inline-block
+	padding: 7px 0 7px 38px
+	color: #999
+#listv th, #subhistory th, #filelist th, #playlist_wait th
+	display: inline-block
+	padding: 7px 0 7px 38px
+	color: #fff
+#listv tbody, #filelist tbody, #subhistory tbody, #playlist_wait tbody
+	height: 80vh
+#singer td
+	padding-top: 11px
+	padding-bottom: 11px
+.table-spirite1 
+	background: rgba(255,255,255,0.1)
+.table-spirite2
+	background: rgba(0,0,0,0.1)
+.artistname
+	position: absolute
+	right: 20px
+	color: #a4dbea
+	padding-top: 11px
+.artistname_white
+	position: absolute
+	left: 280px
+	color: #fff
+	padding-top: 11px
+.btn_more
+	color: #fff
+#playlist a .btn_more , #historylist a .btn_more
+	width: 100%
+	padding: 15px 0
+	text-align: right
+.current_p
+	width: 100%
+	bottom: 100px
+	position: fixed
+	bottom: 13.3%
+	text-align: center
+#dotarea li
+	float: left
+	margin: 0 20px
+.highlight
+	background: #1b6075
+.dot
+	width: 10px
+	height: 10px
+	+border-radius(5px)
+	border: 1px solid #1b6075
+#btn_remove
+	display: none
+//action panel all
+.action_panel_all
+	position: absolute
+	display: none
+	z-index: 1100
+	background: rgba(0,22,43,.7)
+	height: 54px
+	float: right
+	left: 20vw
+	margin-top: -80px
+	+border-radius(8px)
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5)
+	border: 1px solid rgba(255,255,255,.5)
+a.pp_all0
+	+border-radius(8px 0 0 8px)
+a.pp_all
+	+border-radius(0)
+a.pp_allend
+	+border-radius(0 8px 8px 0)
+a.pp_all0, a.pp_all, a.pp_allend
+	color: #fff
+	width: 54px
+	display: inline-block
+	padding: 14px 0 0 0
+	z-index: 999
+	text-align: center
+a:hover.pp_all0, a:hover.pp_all, a:hover.pp_allend
+	background: rgba(0,0,0, .4)
+	height: 54px
+a:active.pp_all0, a:active.pp_all, a:active.pp_allend
+	background: rgba(0,0,0, .6)
+	height: 54px
+a:hover.pp0,a:hover.pp1,a:hover.pp2,a:hover.pp3,a:hover.pp4,a:hover.pp5,a:hover.pp6 
+	background: rgba(0,0,0, .4)
+	height: 48px
+a:active.pp0,a:active.pp1,a:active.pp2,a:active.pp3,a:active.pp4,a:active.pp5,a:active.pp6 
+	background: rgba(0,0,0, .6)
+	height: 48px
+a.pp0,a.pp1,a.pp2,a.pp3 ,a.pp4 ,a.pp5 ,a.pp6
+	color: #fff
+	width: 48px
+	display: inline-block
+	padding: 12px 0 0 0
+	z-index: 999
+	text-align: center
+.pp0 i, .pp1 i, .pp2 i, .pp3 i, .pp4 i, .pp5 i, .pp6 i, .pp_all i, .pp_all0 i, .pp_allend i
+	font-size: 1.6rem
+	padding-top: 4px
+.controller_focus
+	background: #0f5bb8
+.clear
+	clear: both
+#listv, #subhistory, #filelist, #playlist_wait
+	text-align: center
+	width: 100%
+	height: 100%
+#playlist_wait
+	display: none
+#singer
+	overflow-y: auto
+	overflow-x: hidden
+	padding: 0 8px
+	width: 100%
+	height: 100%
+.pager
+	width: 100%
+	padding: 4px 0
+	text-align: right
+	padding-right: 20px
+	margin-top: -40px
+#pager
+	width: 100%
+	padding: 4px 0
+	text-align: right
+	padding-right: 20px
+	margin-top: -40px
+	margin-bottom: 40px
+#pager p
+	display: inline
+	margin-right: 70px
+#pager_sel
+	width: 60px
+	height: 20px
+	margin: 0
+	position: absolute
+	right: 114px
+#pager_sel  option
+	color: #000
+	padding: 4px
+#pager span
+	position: absolute
+	right: 20px
+#pager .checkcount
+	position: absolute
+	right: 170px
+#pager i
+	border: 1px solid #fff
+	padding: 0.2em 0.5em
+	margin-left: 0.6em
+#pager .ic_topbar_pre
+	+border-radius (0.4em 0 0 0.4em)
+#pager .ic_topbar_pre:hover, #pager .ic_topbar_next:hover
+	color: #00ffff
+	border-color: #00ffff
+#pager .ic_topbar_next
+	+border-radius (0 0.4em 0.4em 0)
+.pagerdown
+	bottom: 70px
+#psel
+	position: absolute
+	display: none
+	z-index: 999
+	background: rgba(0,22,43,.7) 
+	float: left
+	left: 20vw
+	height: 48px
+	margin-top: -48px
+	margin-right: -2px
+#pp_sel 
+	position: absolute
+	display: none
+	z-index: 999
+	background: rgba(0,22,43,.7)
+	float: right
+	right: 0
+	height: 48px
+	margin-top: -48px
+	margin-right: 6px
+#psel p,#pp_sel p, #psel_all p
+	display: none
+#llink
+	display: none
+.dropbox
+	width: 208px
+	background: #f8f5fa
+	display: inline-block
+	border: 1px solid #b0b0b0
+	z-index: 9999
+.dropbox .dropsub_icon >a
+	padding-left: 40px
+.dropbox .ic_topbar_refresh
+	position: absolute
+	right: 20px
+	top: 12px
+	color: #999
+.dropsub_icon .ic_topbar_selected
+	display: none
+	position: absolute
+	margin-top: 14px
+	left: 20px
+	color: #369eff
+.dropbox-icon
+	width: 208px
+	background: #f8f5fa
+	display: inline-block
+	border: 1px solid #b0b0b0
+	z-index: 9999
+.dropbox-icon li
+	line-height: 40px
+	color: #2f2f2f
+.dropbox >.dropbox-icon a
+	padding-left: 40px
+.dropbox >.dropbox-icon li a:hover, .dropbox .dropsub_icon >a:hover 
+	display: inline-block
+	background: #defefd
+.dropbox li a
+	color: #2f2f2f
+	line-height: 40px
+	padding-left: 22px
+.dropbox li a:hover
+	background: #defefd
+	display: block
+	width: 204px
+.dropbox .disable
+	color: #999
+#menuadmin
+	display: none
+	position: fixed
+	float: right
+	right: 0
+	margin-right: 264px
+	top: 50px
+#multizon_menu
+	display: none
+	position: fixed
+	float: right
+	right: 368px
+	margin-right: 32px
+	top: 50px
+#menumain
+	display: none
+	position: fixed
+	float: right
+	right: 224px
+	//margin-right: 18px
+	top: 50px
+#menumain hr, #multizon_menu hr
+	background: #999
+	height: 1px
+	margin: -1px 0
+	width: 150px
+#menulan
+	display: none
+	position: fixed
+	float: right
+	right: 432px
+	top: 84px
+#menumain i
+	position: absolute
+	right: 0
+	margin: 14px 20px
+#selectall
+	display: none
+	margin: 10px 20px
+#sort
+	display: none
+	margin: 10px 20px
+.dropbox p
+	padding: 10px 10px 0
+	color: #999
+#filter
+	display: none
+	position: absolute
+	margin: 70px
+	width: 80%
+#filter a:hover, .mover, .songlist_in td:hover, .songlist td:hover, .singerlist td:hover 
+	background: rgba(0,0,0,.5)
+#filter a:active, .songlist_in td:active, .songlist td:active, .singerlist td:active 
+	background: rgba(0,0,0,.8)
+.actived_song 
+	background: rgba(0,0,0,.8)
+#filter a
+	color: #fff 
+	padding: 0 27px 
+	display: block
+#filter li
+	line-height: 48px
+	background: rgba(0,0,0,0.4) 
+	width: 100%
+	margin: 2px
+.song_selected
+	color: #04e0e0
+.pink
+	color: #a4dbea
+#slid .ui-slider-range
+	background: #c3006d
+	border-radius: 0
+#slid
+	height: 6px
+	width: 130px
+	border: none
+	border-radius: 0
+	float: left
+	border-radius: none
+	margin: 0 20px
+.keycontroll
+	display: inline-block
+	margin: 40px 20px 10px
+	width: 204px
+.keycontroll ul
+	margin-top: -30px
+.keycontroll ul li
+	line-height: 32px
+.keycontroll li a:hover
+	background: rgba(227,0,125,1)
+	display: block
+.keycontroll i
+	display: inline
+	float: left
+	margin-top: -3px
+#slid .ui-slider-handle
+	border-color: #999
+	background: #fff
+	border-radius: 20px
+#check1
+	margin: 0 10px 0 0
+#check2
+	position: absolute
+	margin: 15px 0 
+#check3_all
+	display: none
+	position: absolute
+	left: 46px
+	top: 58px
+#check3
+	display: none
+	margin-right: -13px
+.edit, .ic_submenu_open, .ic_submenu_close
+	display: none
+	float: right
+	margin-right: 5px
+	font-size: 0.8rem
+.ic_submenu_open, .ic_submenu_close
+	font-size: 0.625rem
+	margin-top: 4px
+	color: rgba(255,255,255,.4)
+.ic_songlist_nowplaying
+	position: absolute
+	float: left
+	top: 1.1em
+	left: -22px
+	font-size: 0.9rem
+	vertical-align: middle
+	display: none
+h4 .btn_mainpage_backstratum
+	margin: 0 0.625rem 0 0
+	padding: 0.5rem
+	+border-radius(1.5rem)
+	color: #7e7e7e
+	border: 0.0625rem solid #7e7e7e
+.btn_mainpage_backstratum
+	font-size: 1.125rem
+	+border-radius(1.5rem)
+	color: #fff
+	border: 0.0625rem solid #fff
+	padding: 6px
+	vertical-align: middle
+.edit_title
+	color: #fff
+	padding-left: 12px
+	font-size: 0.9375rem
+.echo
+	display: inline-block
+	margin: 8px 20px
+.music_config
+	display: inline-block
+	margin: 8px auto
+.echo a i
+	font-size: 2rem
+.music_config a i
+	font-size: 1.6rem
+.music_config .ic_controlbar_key, .music_config .ic_controlbar_micvolume, .music_config .ic_controlbar_musicvolume
+	font-size: 1.4rem
+.music_config a
+	+border-radius(20px)
+	padding-top: 2px
+	width: 28px
+	height: 28px
+	display: inline-block
+	margin: 8px
+	color: #fff
+	border: 0.1em solid #fff
+.echo a
+	+border-radius(20px)
+	padding-top: 4px
+	width: 40px
+	height: 40px
+	display: inline-block
+	margin: 8px
+	color: #fff
+	border: 0.1em solid #fff
+.echo a:hover, .music_config a:hover
+	border-color: rgba(255,255,255,.3)
+	background: rgba(0,0,0,.3)
+	color: rgba(255,255,255,.3)
+.echo a:active, .music_config a:active
+	color: #00ffff
+	background: rgba(0,0,0,0)
+	border-color: #00ffff
+a.controlbar_pin 
+	color: #fff
+a .ic_controlbar_pin
+	position: absolute
+	right: 10px
+	top: 10px
+	font-size: 0.8rem
+a:hover .ic_controlbar_pin, .pin_enable
+	color: #05264d
+.ic_submenu_rename, .keycontroll a
+	color: #fff
+.btn_control 
+	opacity: 0.2
+.ic_topbar_selected
+	color: #333
+	position: absolute
+	left: 0
+.amount
+	position: absolute
+	color: #fff
+	margin: -28px 46px 0
+.favsel
+	text-align: left
+	width: 240px
+	border: 1px solid #b0b0b0
+	background: #fff
+.favsel_cart
+	text-align: left
+	width: 500px
+	height: 320px
+	overflow: auto
+	border: 1px solid #b0b0b0
+	background: #fff
+.folder_list
+	text-align: left
+	width: 100%
+	height: 320px
+	overflow: auto
+	border: 1px solid #b0b0b0
+	background: #fff
+.folder_list_fluid
+	position: relative
+	text-align: left
+	width: 450px
+	height: 320px
+	overflow: auto
+	border: 1px solid #b0b0b0
+	background: #fff
+.folder_lilst_head
+	background: #7f8899
+.folder_list li, .folder_list_fluid li
+	padding-left: 10px
+	line-height: 28px
+.folderone:hover,.foldertwo:hover,.folderthree:hover,.folderfour:hover
+	background: #f2f2f2
+	width: 95%
+	height: 28px
+	display: inline-block
+.expand_selected
+	background: #dddddd
+	width: 95%
+	height: 28px
+	display: inline-block
+.folder_list input
+	margin-right: 10px
+.favsel_cart li
+	border-bottom: 2px solid #fff
+.favsel a, .favsel_cart a
+	color: #2f2f2f
+	line-height: 32px
+	padding-left: 10px
+.favsel input, .favsel_cart input
+	margin-right: 10px
+.favsel a:hover, .favsel_cart a:hover
+	display: inline-block
+	width: 100%
+	background: #defefd
+.favsel a:focus, #s_result td:focus, #a_result td:focus, #as_result td:focus, .favsel_cart a:focus
+	display: inline-block
+	width: 100%
+	background: #9bd5fa
+//checkbox and radio button
+input[type=radio] 
+	opacity: 0
+	position: absolute
+	z-index: 12
+	width: 18px
+	height: 18px
+
+input[type=radio]:focus 
+	outline: none !important
+
+input[type=radio]+.lbl 
+	position: relative
+	z-index: 11
+	display: inline-block
+	margin: 0
+	line-height: 20px
+	min-height: 14px
+	min-width: 14px
+	font-weight: normal
+
+
+input[type=radio]+.lbl.padding-16::before 
+	margin-right: 16px
+
+input[type=radio]+.lbl.padding-12::before 
+	margin-right: 12px
+
+input[type=radio]+.lbl.padding-8::before 
+	margin-right: 8px
+
+input[type=radio]+.lbl.padding-4::before 
+	margin-right: 4px
+
+input[type=radio]+.lbl.padding-0::before 
+	margin-right: 0px
+
+input[type=radio]+.lbl::before 
+	font-family: fontAwesome
+	font-weight: normal
+	font-size: 0.6875rem
+	color: #2091cf
+	content: "\a0"
+	background-color: #FAFAFA
+	border: 1px solid #CCC
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05)
+	border-radius: 0
+	display: inline-block
+	text-align: center
+	vertical-align: middle
+	height: 15px
+	line-height: 12px
+	min-width: 15px
+	margin-right: 1px
+	margin-top: -4px
+	padding-top: 1px
+
+input[type=radio]:checked+.lbl::before 
+	display: inline-block
+	content: '\f00c'
+	background-color: #F5F8FC
+	border-color: #adb8c0
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1)
+
+input[type=radio]:hover+.lbl::before,
+input[type=radio]+.lbl:hover::before 
+	border-color: #828282
+
+
+input[type=radio]:active+.lbl::before,
+input[type=radio]:checked:active+.lbl::before 
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1)
+
+
+input[type=radio]:disabled+.lbl::before,
+input[type=radio][disabled]+.lbl::before,
+input[type=radio].disabled+.lbl::before 
+	background-color: #DDD !important
+	border-color: #CCC !important
+	box-shadow: none !important
+	color: #BBB
+
+
+input[type=radio]+.lbl::before 
+	border-radius: 32px
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 2.25rem
+
+
+input[type=radio]:checked+.lbl::before 
+	content: "\2022"
+.empty
+	display: inline-block
+	text-align: center
+	margin: auto
+	margin-top: 20%
+.empty p
+	color: rgba(255,255,255,0.2)
+	padding-top: 30px
+.editsong_title
+	color: #999
+	text-align: right
+	padding: 20px 0
+.editsong_item 
+	height: 40px
+	margin: 10px 14px
+	width: 60%
+.floatleft
+	clear: both
+.set_li
+	margin-left: 2px
+.folder_tool
+	padding: 4px
+	border-bottom: 1px solid #b0b0b0
+.folder_tool li
+	display: inline
+	padding: 2px 22px
+	border: 1px solid #000
+	+border-radius(8px)
+	margin: 4px 10px
+.popup .ic_settings_multizone, .ic_settings_theme
+	padding-right: 8px
+	font-size: 1.25rem
+.enable_blue
+	color: #00ffff
+	border-color: #00ffff
+.alpha
+	background: transparent
+//landing page
+.landing_bg
+	position: fixed
+	top: 0
+	left: 0
+	text-align: center
+	z-index: -1
+	width: 100%
+	height: 100%
+	display: block
+	background: url("../images/landing_page_bg1.png") no-repeat
+	background-size: 100% 
+	overflow: auto
+.landing_item 
+	z-index: 1
+	margin: 20vh auto
+	width: 80vw
+	display: inline-block
+.landing_item li 
+	display: inline-block
+	width: 224px
+	text-align: center
+.landing_item li p
+	font-size: 1.1rem
+	font-weight: 600
+	padding-top: 14px
+.landing_item a
+	color: #fff
+.oceanktv_intro 
+	font-size: 1.6rem
+	margin-bottom: 3em
+.oceanktv_logo
+	font-size: 5.4rem
+.landing_qnap
+	position: absolute
+	left: 0
+.coming_soon
+	font-size: 1.4rem
+	text-align: center
+	padding: 91px
+	color: #717171
+p.tip_track 
+	clear: both
+	color: #195a87
+	text-align: left
+	margin: 0 0 0 80px
+	font-size: 0.8rem
+.add_myfav
+	display: block
+	text-align: left
+	width: 100%
+	padding: 10px
+	background: rgba(0,0,0,.6)
+.add_myfav i
+	+border-radius(0.8em)
+	border: 1px solid #fff
+	padding: 0.1em
+	margin: 0 10px
+.menu-item a:hover
+	background: rgba(42,255,209,1) /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(42,255,209,1), rgba(0,145,147,1)) /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba(42,255,209,1), rgba(0,145,147,1)) /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(42,255,209,1), rgba(0,145,147,1)) /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(42,255,209,1), rgba(0,145,147,1)) /* Standard syntax */
+.popup .tip
+	color: #195a87
+	padding-bottom: 4px
+.sidebar_item .bubble
+	position: absolute
+	background: #a1136a
+	+border-radius(1em)
+	font-size: 0.43rem
+	display: inline-block
+	padding: 0.04em 0.4em
+	left: 56px
+	margin-top: -70px
+	height: 1.6em
+	border: 1px solid #fff
+.counter
+	position: absolute
+	right: 20px

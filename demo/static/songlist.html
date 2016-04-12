@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>oceanKTV_RWD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/icon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.custom-scrollbar.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Template js-->
+    <!-- <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-switch.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/rwd.js"></script> -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/icon.css" rel="stylesheet">
+    <script type="text/javascript" src="static/bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <nav>
+            <div class="navicon"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></div>
+            <div class="btn_tv nav_sm_show"><img src="static/images/btn_topbar_control_off.png"></div>
+            <ul class="navemenu" id="opennav">
+                <li><i class="ic_settings_multizone"></i></li>
+                <li><i class="ic_topbar_refresh"></i></li>
+                <li><i class="ic_topbar_help"></i></li>
+                <li><i class="enlarge"></i></li>
+                <li><i class="ic_topbar_More"></i>
+                    <div class="dropmenu">
+                        <ul>
+                            <li>安裝OceanKTV Client</li>
+                            <li>語言</li>
+                            <li>設定</li>
+                            <li>快速導覽</li>
+                            <li>幫助</li>
+                            <li>關於</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <input id="switch-labelText" type="checkbox" data-label-text="oceanKTV">
+                </li>
+            </ul>
+            <div class="search">
+                <div id="search_bar">
+                    <input type="text" name="search" placeholder="Search...">
+                    <select>
+                        <option value="title">Title</option>
+                        <option value="artist">Artist</option>
+                    </select>
+                </div>
+                <i class="ic_topbar_Search_normal"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" id="songmenu">
+        <div class="mainmenu">
+            <ul class="list-unstyled">
+                <li class="active">
+                    <div class="btn_main"><i class="ic_menu_back"></i>
+                        <h4>首頁</h4></div>
+                </li>
+                <li>
+                    <div class="btn_main"><i class="ic_action_favortie"></i>
+                        <h4>我的最愛歌本</h4></div>
+                </li>
+                <li>
+                    <div class="btn_main"><i class="ic_menu_reguestbook"></i>
+                        <h4>點歌本</h4></div>
+                </li>
+                <li>
+                    <div class="btn_main"><i class="ic_menu_requestinglist"></i>
+                        <h4>點播清單</h4></div>
+                </li>
+                <li>
+                    <div class="btn_main"><i class="ic_menu_history"></i>
+                        <h4>歷史紀錄</h4></div>
+                </li>
+                <!--<li>
+                    <div class="btn_main"><a href="home.html"><i class="ic_menu_back"></i><h4>回到歡唱包廂</h4></a></div>
+                </li>-->
+            </ul>
+        </div>
+        <div class="submenu">
+            <ul class="list-unstyled show">
+                <li class="active">熱門排行榜
+                    <!--<ul class="list-unstyled childopen">
+                        <li class="active">YouTube 熱門影片 - 台灣/ Music</li>
+                        <li>好樂迪國語新歌排行2016/03/22～2016/03/28</li>
+                        <li>2016台語歌</li>
+                        <li>Popular on YouTube/ Just-Released Music Videos</li>
+                        <li>2016_3_華語熱門點播榜</li>
+                    </ul>-->
+                </li>
+                <li>訂閱主題</li>
+            </ul>
+            <!--<ul class="list-unstyled navmenu">
+                <li>主題精選<span><i class="ic_submenu_open"></i></span>
+                    <ul class="list-unstyled">
+                        <li>我是歌手 I Am a Singer 選手參賽歌曲 KTV版</li>
+                        <li>偶像劇主題曲</li>
+                        <li>中國大陸電視劇主題曲集合 (2016年1月更新)</li>
+                        <li>中國大陸電視劇主題曲集合 (2016年1月更新)</li>
+                        <li>韓劇主題曲</li>
+                        <li>[嚴選] 台語金曲老歌 支支動聽</li>
+                        <li>90年代怀念歌曲</li>
+                        <li>搖滾</li>
+                        <li>國語抒情KTV</li>
+                        <li>中文獨立樂團</li>
+                        <li>輕快輕音樂、療癒系、美術；畢業歌曲</li>
+                        <li>英文兒歌</li>
+                        <li>台灣兒歌</li>
+                    </ul>
+                </li>
+            </ul>-->
+            <ul class="list-unstyled fav">
+                <li>+新增我的最愛歌本</li>
+                <li>我的最愛1</li>
+                <li>我的最愛2</li>
+                <li>我的最愛3</li>
+            </ul>
+            <ul class="list-unstyled navmenu">
+                <!--<li>依資料夾點歌<span><i class="ic_submenu_open"></i></span>
+                    <ul class="list-unstyled">
+                        <li>OceanKTV</li>
+                        <li>Download</li>
+                        <li>Karaoke</li>
+                    </ul>
+
+                </li>-->
+                <li>依歌手點歌<span><i class="ic_submenu_open"></i></span>
+                    <ul class="list-unstyled">
+                        <li>男歌手</li>
+                        <li>女歌手</li>
+                        <li>團體</li>
+                    </ul>
+                </li>
+                <li>依語言點歌<span><i class="ic_submenu_open"></i></span>
+                    <ul class="list-unstyled">
+                        <li>中文</li>
+                        <li>台語</li>
+                        <li>粵語</li>
+                        <li>英文</li>
+                        <li>日文</li>
+                        <li>韓文</li>
+                        <li>西班牙文</li>
+                        <li>其他語言</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>待播清單</li>
+                <li>已點清單</li>
+            </ul>
+        </div>
+        <div class="listview">
+            <div class="heading">
+                <h1>首頁</h1>
+                <div class="toolbar">
+                    <button type="button" class="btn_toolbar"><i class="ic_action_requesting"></i>點播全部</button>
+                    <button type="button" class="btn_toolbar"><i class="ic_toolbar_shuffle"></i>隨機點播</button>
+                </div>
+                <div class="pagination">
+                    <p>第1-15首(總共:19首),位於第1頁 </p><i class="btn_sm ic_topbar_pre"></i> <i class="btn_sm ic_topbar_next"></i></div>
+            </div>
+            <div class="menu-item">
+                <ul class="list-unstyled show">
+                    <li>
+                        <h4>排行榜</h4>
+                        <p>2016_3_華語熱門點播榜</p>
+                        <!--<section class="billboard col-xs-12">
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/JvkqZrYJUe8/3.jpg"/>
+                                <div>
+                                    <span>好樂迪國語新歌排行2016/03/22～2016/03/28</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/D-j7Gk2Gh8w/2.jpg" />
+                                <div>
+                                    <span>YouTube 熱門影片 - 台灣/ Music</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/A1aU5VJKldE/1.jpg" />
+                                <div>
+                                    <span>2016台語歌</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/W9LJDwZOprY/1.jpg" />
+                                <div>
+                                    <span>Popular on YouTube/ Just-Released Music Videos</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/yQU0mVOjsug/3.jpg" />
+                                <div>
+                                    <span>2016_3_華語熱門點播榜</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/oyEuk8j8imI/1.jpg" />
+                                <div>
+                                    <span>2016_3_西洋熱門點播榜</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                        </section>-->
+                        <section class="song col-xs-12">
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/AOkFpYLJh2I/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">流行歌曲</span>
+                                    <span class="col-xs-12 col-sm-12">李榮浩</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/-cUtVtBx_8w/1.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">少了一個你</span><span class="col-xs-12 col-sm-12">io</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/sU4UgzcADL4/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12">
+                                    <span class="col-xs-12 col-sm-12">不負相思不負君</span>
+                                    <span class="col-xs-12 col-sm-12">沐婷</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/-sM8SynMM5I/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">當我們混在一起</span><span class="col-xs-12 col-sm-12">兄弟本色</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/cD-bqbybMxM/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">資格不符</span><span class="col-xs-12 col-sm-12">王大文</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/CJmqMxMMQDs/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">不可能失眠</span><span class="col-xs-12 col-sm-12">符瓊音</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/R9km70LAhEQ/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">愛情喜劇</span><span class="col-xs-12 col-sm-12">日京江羽人</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/_FCnnvrHQsc/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">想戀一個愛</span><span class="col-xs-12 col-sm-12">丁噹</span></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2">
+                                <img src="http://img.youtube.com/vi/EM-GCgd88mk/2.jpg" class="col-xs-4 col-sm-12" />
+                                <div class="col-xs-8 col-sm-12"><span class="col-xs-12 col-sm-12">同類</span><span class="col-xs-12 col-sm-12">嘴哥樂團</span></div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <h4>訂閱主題</h4>
+                        <section class="billboard col-xs-12">
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/xxiUbgI8VlU/3.jpg" />
+                                <div>
+                                    <span>我是歌手 I Am a Singer 選手參賽歌曲 KTV版</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/xxiUbgI8VlU/2.jpg" />
+                                <div>
+                                    <span>中國大陸電視劇主題曲集合 (2016年1月更新)</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/19-RI4uC4Vc/1.jpg" />
+                                <div>
+                                    <span>韓劇主題曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/Pj4do_Lr68A/1.jpg" />
+                                <div>
+                                    <span>偶像劇主題曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/06tGnYZQJvU/3.jpg" />
+                                <div>
+                                    <span>[嚴選] 台語金曲老歌 支支動聽</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/c35izvZOSDY/1.jpg" />
+                                <div>
+                                    <span>90年代怀念歌曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <h4>推薦主題</h4>
+                        <section class="billboard col-xs-12">
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/xxiUbgI8VlU/3.jpg" />
+                                <div>
+                                    <span>我是歌手 I Am a Singer 選手參賽歌曲 KTV版</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/xxiUbgI8VlU/2.jpg" />
+                                <div>
+                                    <span>中國大陸電視劇主題曲集合 (2016年1月更新)</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/19-RI4uC4Vc/1.jpg" />
+                                <div>
+                                    <span>韓劇主題曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/Pj4do_Lr68A/1.jpg" />
+                                <div>
+                                    <span>偶像劇主題曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/06tGnYZQJvU/3.jpg" />
+                                <div>
+                                    <span>[嚴選] 台語金曲老歌 支支動聽</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2"><img src="http://img.youtube.com/vi/c35izvZOSDY/1.jpg" />
+                                <div>
+                                    <span>90年代怀念歌曲</span>
+                                    <p>10首</p>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <ul class="list-unstyled song closed">
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content">
+                                <span class="col-xs-12 col-sm-8">你怎麼捨得我難過</span>
+                                <span class="col-xs-12 col-sm-4">尚雯婕</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">愛讓每個人都心碎</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">等你的季節</span><span class="col-xs-12 col-sm-4">吷奇隆,劉詩詩</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-md-12 col-lg-6 nopadding">
+                        <div>
+                            <div class="thumb col-xs-2"><i class="ic_action_preview"></i></div>
+                            <div class="col-xs-8 song_content"><span class="col-xs-12 col-sm-8">Song title</span><span class="col-xs-12 col-sm-4">artist</span></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--<h4>內容清單</h4>-->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="foot_bar navbar navbar-fixed-bottom">
+                <div class="tv_item">
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_menu_back"></i>
+                        <p>停止播放</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_play"></i>
+                        <p>播放</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_stop"></i>
+                        <p>切歌</p>
+                    </div>
+                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_repeat"></i>
+                        <p>重唱</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_guide"></i>
+                        <p>導唱</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_effect"></i>
+                        <p>製造音效</p>
+                    </div>
+                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_mutes"></i>
+                        <p>靜音</p>
+                    </div>
+                    <div class="col-xs-6 text-center three-icon">
+                        <p>value</p><i class="ic_controlbar_echo_s icon_border"></i> <i class="ic_controlbar_echo_m icon_border"></i> <i class="ic_controlbar_echo_l icon_border"></i>
+                        <p>迴音</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_key"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>音調調整</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_micvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>麥客風音量</p>
+                    </div>
+                    <div class="col-xs-6 text-center two-icon">
+                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_musicvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>音樂音量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
