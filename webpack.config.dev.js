@@ -45,6 +45,10 @@ module.exports = {
         // HTML LOADER
         test: /\.html$/,
         loader: 'html'
+      },
+      {
+        test: /\.json/,
+        loader: 'json'
       }
     ]
   }
