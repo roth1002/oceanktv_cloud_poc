@@ -23,6 +23,7 @@ var projectName	  = exports.projectName = 'ktvstation';
 
 var version		  = exports.version = 'v1';
 
+// Footer bar controlor
 exports.stopUrl = `${base}/${projectName}/${version}/player/stop`;
 exports.playUrl = `${base}/${projectName}/${version}/player/play`;
 exports.nextUrl = `${base}/${projectName}/${version}/player/next`;
@@ -40,3 +41,6 @@ exports.micUpUrl = `${base}/${projectName}/${version}/effects/mic/volume/up`;
 exports.micDownUrl = `${base}/${projectName}/${version}/effects/mic/volume/down`;
 exports.musicUpUrl = `${base}/${projectName}/${version}/player/volume/up`;
 exports.musicDownUrl = `${base}/${projectName}/${version}/player/volume/down`;
+
+// Poplist
+exports.postSongToQueueUrl = `${base}/${projectName}/${version}/playlist`;

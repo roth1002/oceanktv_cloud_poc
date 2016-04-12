@@ -1,21 +1,17 @@
 import fakeData from '../../../data.json';
 import '../../sass/songlist.sass';
+import { postSongToQueueUrl } from '../config/url';
 
-let $popListBlock;
+/* DOM */
+const $popListBlock = $('#pop-list');
 
 $(document).ready(init);
 
 function init() {
 	console.log('%c Init: songlist ','background-color:teal;color:white;');
 
-	// DOM Elements
-	$popListBlock = $('#pop-list');
-
-	// Functions
-	window.playYoutube = playYoutube;
-
-
 	renderFetchedPopList();
+	window.playYoutube = playYoutube;
 }
 
 function renderFetchedPopList() {
@@ -46,7 +42,5 @@ function template(song) {
 }
 
 function playYoutube(elmnt) {
-	const id = elmnt.id;
-	console.log(`%c id : ${id} `,'color:#f69;font-weight:bold;')
-	// TODO: ajax
+	$.post(postSongToQueueUrl, { songid: elmnt.id, flow: 0 });
 }
