@@ -21,7 +21,6 @@
     <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/main.css" rel="stylesheet">
     <link href="static/css/icon.css" rel="stylesheet">
-    <script type="text/javascript" src="static/bundle.js"></script>
 </head>
 
 <body>
@@ -413,41 +412,42 @@
         <div class="row">
             <div class="foot_bar navbar navbar-fixed-bottom">
                 <div class="tv_item">
-                    <div class="col-xs-3 text-center one-icon"><i class="ic_menu_back"></i>
+                    <div id="ctl_songlist_stop" class="col-xs-3 text-center one-icon"><i class="ic_menu_back"></i>
                         <p>停止播放</p>
                     </div>
-                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_play"></i>
+                    <div id="ctl_songlist_play" class="col-xs-3 text-center one-icon"><i class="ic_controlbar_play"></i>
                         <p>播放</p>
                     </div>
-                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_stop"></i>
+                    <div id="ctl_songlist_next" class="col-xs-3 text-center one-icon"><i class="ic_controlbar_stop"></i>
                         <p>切歌</p>
                     </div>
-                    <div class="col-xs-3 text-center one-icon"><i class="ic_controlbar_repeat"></i>
+                    <div id="ctl_songlist_replay" class="col-xs-3 text-center one-icon"><i class="ic_controlbar_repeat"></i>
                         <p>重唱</p>
                     </div>
-                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_guide"></i>
+                    <div id="ctl_songlist_guide" class="col-xs-4 text-center one-icon"><i class="ic_controlbar_guide"></i>
                         <p>導唱</p>
                     </div>
-                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_effect"></i>
+                    <div class="col-xs-4 text-center one-icon">
+                        <p>value</p><i id="ctl_songlist_boo" class="btn_control_boo icon_border"></i><i class="ic_controlbar_effect"></i><i id="ctl_songlist_applause" class="ic_control_applause icon_border"></i>
                         <p>製造音效</p>
                     </div>
-                    <div class="col-xs-4 text-center one-icon"><i class="ic_controlbar_mutes"></i>
+                    <div id="ctl_songlist_mute" class="col-xs-4 text-center one-icon"><i class="ic_controlbar_mutes"></i>
                         <p>靜音</p>
                     </div>
                     <div class="col-xs-6 text-center three-icon">
-                        <p>value</p><i class="ic_controlbar_echo_s icon_border"></i> <i class="ic_controlbar_echo_m icon_border"></i> <i class="ic_controlbar_echo_l icon_border"></i>
+                        <p>value</p><i id="ctl_songlist_echo_small" class="ic_controlbar_echo_s icon_border"></i> <i id="ctl_songlist_echo_middle" class="ic_controlbar_echo_m icon_border"></i> <i id="ctl_songlist_echo_long" class="ic_controlbar_echo_l icon_border"></i>
                         <p>迴音</p>
                     </div>
                     <div class="col-xs-6 text-center two-icon">
-                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_key"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>value</p><i id="ctl_songlist_pitch_up" class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_key"></i><i id="ctl_songlist_pitch_down" class="ic_controlbar_decrease icon_border"></i>
                         <p>音調調整</p>
                     </div>
                     <div class="col-xs-6 text-center two-icon">
-                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_micvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>value</p><i id="ctl_songlist_mic_up" class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_micvolume"></i><i id="ctl_songlist_mic_down" class="ic_controlbar_decrease icon_border"></i>
                         <p>麥客風音量</p>
                     </div>
                     <div class="col-xs-6 text-center two-icon">
-                        <p>value</p><i class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_musicvolume"></i><i class="ic_controlbar_decrease icon_border"></i>
+                        <p>value</p><i id="ctl_songlist_music_up" class="ic_controlbar_plus icon_border"></i><i class="ic_controlbar_musicvolume"></i><i id="ctl_songlist_music_down" class="ic_controlbar_decrease icon_border"></i>
                         <p>音樂音量</p>
                     </div>
                 </div>
@@ -455,5 +455,5 @@
         </div>
     </footer>
 </body>
-
+<script type="text/javascript" src="static/bundle.js"></script>
 </html>
