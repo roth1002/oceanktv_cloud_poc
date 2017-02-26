@@ -12,7 +12,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "koa": "^1.2.0",
-    "koa-static": "^2.0.0"
+    "koa-static": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
